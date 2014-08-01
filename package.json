@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/HackedByChinese/ng-idle-test/issues"
   },
-  "homepage": "https://github.com/HackedByChinese/ng-idle-test"
+  "homepage": "https://github.com/HackedByChinese/ng-idle-test",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-karma": "^0.8.3",
+    "karma": "^0.12.19",
+    "karma-jasmine": "^0.1.5",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "load-grunt-tasks": "^0.6.0"
+  }
 }
