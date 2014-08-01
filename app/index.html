@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="myprojectname">
+
+<head>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+  <script src="../bower_components/angular/angular.js"></script>
+  <script src="../bower_components/ng-idle/angular-idle.min.js"></script>
+  <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="app.js"></script>
+</head>
+
+<body ng-controller="DemoCtrl">
+  <h1>Hello Plunker!</h1>
+  <button type="button" ng-click="start()">Start</button>
+  <button type="button" ng-click="stop()">Stop</button>
+
+  <script type="text/ng-template" id="warning-dialog.html">
+    <div class="modal-header"> <h3> Session Timeout Warning </h3>
+    </div>
+     <div class="modal-body" ng-idle-countdown="countdown" ng-init="countdown=5">
+       <p class = "Font-Size-20" > You will be logged out in <span class="Font-Size-20">{{countdown}} </span>
+       <span ng-pluralize="" count="countdown" when="{'one': 'second', 'other': 'seconds' }"></span > . </p>
+        <progressbar max="5" value="countdown" animate="true" class="Margin-top-10 progress-striped active" type="warning"></progressbar>
+      </div>
+  </script>
+  <script type="text/ng-template" id="timedout-dialog.html">
+    <div class="modal-header">
+      <h3>Session Timed Out!</h3>
+    </div>
+    <div class="modal-body">
+      <p class="Font-Size-20">
+        You were idle too long and session timed out.You were logged out. </p>
+    </div>
+  </script>
+</body>
+
+</html>
