@@ -4,6 +4,7 @@
   "description": "ng-idle-test ============",
   "main": "index.js",
   "scripts": {
+    "postinstall": "node_modules/.bin/bower install",
     "test": "grunt test"
   },
   "repository": {
