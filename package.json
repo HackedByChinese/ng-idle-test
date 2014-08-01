@@ -1,0 +1,19 @@
+{
+  "name": "ng-idle-test",
+  "version": "0.0.0",
+  "description": "ng-idle-test ============",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HackedByChinese/ng-idle-test.git"
+  },
+  "author": "Mike Grabski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HackedByChinese/ng-idle-test/issues"
+  },
+  "homepage": "https://github.com/HackedByChinese/ng-idle-test"
+}
